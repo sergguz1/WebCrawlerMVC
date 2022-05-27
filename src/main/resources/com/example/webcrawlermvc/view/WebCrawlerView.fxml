@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.webcrawlermvc.controller.WebCrawlerController">
+   <children>
+      <Button fx:id="buttonExecute" layoutX="150.0" layoutY="90.0" mnemonicParsing="false" text="Execute Web Crawler" onAction="#onButtonExecuteClick"/>
+      <Button fx:id="buttonClean" layoutX="350.0" layoutY="90.0" mnemonicParsing="false" text="Clear all" onAction="#onButtonCleanClick"/>
+      <TextField fx:id="textFieldWebsite" layoutX="224.0" layoutY="40.0" opacity="0.52" />
+      <TextArea fx:id="textAreaResults" layoutX="32.0" layoutY="177.0" prefHeight="656.0" prefWidth="547.0" />
+      <Text fx:id="textTitle" layoutX="42.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Text fx:id="textTitleHeader" layoutX="100.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Please enter a complete valid website or list of websites separated by a comma" visible="true" />
+   </children>
+</AnchorPane>
